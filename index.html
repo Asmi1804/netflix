@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Netflix Landing Section -->
+    <div class="container landing-section">
+        <div class="logo">NETFLIX</div>
+
+        <div class="headline">Unlimited movies, TV shows and more</div>
+        <div class="subheadline">Starts at ₹149. Cancel at any time.</div>
+
+        <div class="email-form">
+            <input type="email" placeholder="Email address">
+            <button>Get Started</button>
+        </div>
+
+        <div class="language-select">
+            <select>
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+            </select>
+        </div>
+
+        <div class="sign-in">
+            <button>Sign In</button>
+        </div>
+    </div>
+
+    <!-- Trending Section -->
+    <div class="container trending-section" id="trendingSection">
+        <h2>Trending Now</h2>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    India
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">United States</a></li>
+                    <li><a class="dropdown-item" href="#">United Kingdom</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Movies
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#">TV Shows</a></li>
+                    <li><a class="dropdown-item" href="#">Documentaries</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Movie Cards -->
+        <div class="row mt-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-card position-relative">
+                <div class="rank">1</div>
+                <img src="moive1.webp" alt="Movie 1" class="img-fluid">
+                <div class="card-body">
+                    <span class="recently-added">Recently added</span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-card position-relative">
+                <div class="rank">2</div>
+                <img src="movie 2.jpg" alt="Movie 2" class="img-fluid">
+                <div class="card-body">
+                    <span class="recently-added">Recently added</span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-card position-relative">
+                <div class="rank">3</div>
+                <img src="movie 3.jpg" alt="Movie 3" class="img-fluid">
+                <div class="card-body">
+                    <span class="recently-added">Recently added</span>
+                </div>
+            </div>
+            <!-- Add more movie cards as needed -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

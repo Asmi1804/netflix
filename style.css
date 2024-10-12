@@ -1,0 +1,128 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+/* Landing Section */
+.landing-section {
+    text-align: center;
+    padding-top: 80px;
+    height: 100vh;
+    background-image: url('background img.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.landing-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    z-index: -1;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #e50914;
+    font-weight: bold;
+}
+
+.headline {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.subheadline {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.email-form input[type="email"] {
+    padding: 15px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.email-form button {
+    padding: 15px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.language-select, .sign-in {
+    position: absolute;
+    top: 20px;
+}
+
+.language-select {
+    right: 150px;
+}
+
+.sign-in {
+    right: 40px;
+}
+
+.language-select select, .sign-in button {
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Trending Section */
+.trending-section {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+    background-color: #000;
+}
+
+.trending-section h2 {
+    font-size: 2rem;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-card .rank {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.recently-added {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 1rem;
+}
